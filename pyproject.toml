@@ -1,0 +1,14 @@
+[project]
+name = "abi-inspector"
+version = "0.1.0"
+description = "Validate and analyze Ethereum ABIs; generate stats and interfaces."
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.1",
+  "rich>=13.0",
+  "eth-abi>=5.0",
+  "eth-utils>=4.0"
+]
+
+[project.scripts]
+abi-inspector = "abi_inspector.__main__:cli"
